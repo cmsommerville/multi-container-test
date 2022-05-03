@@ -26,5 +26,5 @@ services:
     ports: 
       - "6379:6379"
     volumes:
-      - ${WEBAPP_STORAGE_HOME}/config/redis.conf:/redis.conf
+      - ./config/redis.conf:/redis.conf
     command: [ "redis-server", "/redis.conf" ]
